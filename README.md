@@ -68,7 +68,7 @@ MIT
 
 ## 👤 Autor
 
-[Seu Nome]
+Fernando Favero Dias
 
 ---
 
