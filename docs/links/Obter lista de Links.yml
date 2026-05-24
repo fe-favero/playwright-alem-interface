@@ -1,0 +1,18 @@
+info:
+  name: Obter lista de Links
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: http://localhost:3333/api/links
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMDFLUVRSN1NKTkRBQlhGRVE2RUNBQlNWTlMiLCJleHAiOjE3NzgxMDg3MzIsImlhdCI6MTc3ODAyMjMzMn0.ZvAfP40nOCGKa7Jl8FO_SZmfaHsyy14iAuQr4VLLxUg
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

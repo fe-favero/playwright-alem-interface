@@ -1,0 +1,25 @@
+info:
+  name: Criar novo Link
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: http://localhost:3333/api/links
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMDFLUVRSN1NKTkRBQlhGRVE2RUNBQlNWTlMiLCJleHAiOjE3NzgwMjY5NTksImlhdCI6MTc3Nzk0MDU1OX0.btOvgjRXwzJ-Xy3UD9g-rw6nXRLc0ySyYfHFu13mVHY
+  body:
+    type: json
+    data: |-
+      {
+        "original_url": "https://www.instagram.com/papitoqa",
+        "title": "Instagram do Fernando Papito"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
